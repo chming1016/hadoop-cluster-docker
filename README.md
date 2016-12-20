@@ -7,19 +7,25 @@ Docker v1.12.5
 
 ##Using Docker Containers
 
-###1. docker built
+###1. git clone
+
+```
+git clone https://github.com/chming1016/hadoop-cluster-docker.git
+```
+
+###2. docker built
 
 ```
 docker built -it hadoop-spark:cluster <Dockerfile Directory>
 ```
 
-###2. create hadoop network
+###3. create hadoop network
 
 ```
 docker network create --driver=bridge hadoop
 ```
 
-###3. start all container
+###4. start all container
 
 sh start-container.sh
 ```
